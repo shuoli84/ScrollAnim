@@ -1,34 +1,46 @@
-//
-//  ScrollAnimTests.m
-//  ScrollAnimTests
-//
-//  Created by Li Shuo on 13-11-14.
-//  Copyright (c) 2013年 Li Shuo. All rights reserved.
-//
+#import "Kiwi.h"
+#import "ScrollAnim.h"
+#import "ScrollAnimEntry.h"
 
-#import <XCTest/XCTest.h>
+SPEC_BEGIN(ScrollAnimEntrySpec)
 
-@interface ScrollAnimTests : XCTestCase
+    describe(@"ScrollAnimEntry", ^{
+        ScrollAnim * __block anim;
+        UIImageView *__block imageView;
 
-@end
+        beforeEach(^{
+            imageView = [[UIImageView alloc] initWithImage:nil];
 
-@implementation ScrollAnimTests
+            anim = [[ScrollAnim alloc] init];
+            [anim.animEntries addObjectsFromArray:@[
+                [ScrollAnimEntry
+                    entryWithObject:imageView
+               keyPathValueSequence:@[
+                   [KeyPathValueSequence
+                       instanceWithKeyPath:@"center"
+                                 valueType:AnimEntryValuePoint
+                              offsetValues:@[
+                                  MakeOV(400.f, [NSValue valueWithCGPoint:CGPointMake(100, 400)]),
+                                  MakeOV(500.f, [NSValue valueWithCGPoint:CGPointMake(200, 350)]),
+                                  MakeOV(600.f, [NSValue valueWithCGPoint:CGPointMake(300, 325)]),
+                                  MakeOV(700.f, [NSValue valueWithCGPoint:CGPointMake(400, 300)]),
+                                  MakeOV(800.f, [NSValue valueWithCGPoint:CGPointMake(500, 325)]),
+                                  MakeOV(900.f, [NSValue valueWithCGPoint:CGPointMake(600, 350)]),
+                                  MakeOV(1000.f, [NSValue valueWithCGPoint:CGPointMake(700, 400)]),
+                              ]]
+               ]
+                ]
+            ]];
+        });
 
-- (void)setUp
-{
-    [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
-}
+        it(@"Should able to caculate the right value", ^{
+            [anim setContentOffset:0];
+            [[NSStringFromCGPoint(imageView.center) should] equal:@"{100, 400}"];
+            [anim setContentOffset:500];
+            [[NSStringFromCGPoint(imageView.center) should] equal:@"{200, 350}"];
 
-- (void)tearDown
-{
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
-}
+        });
 
-- (void)testExample
-{
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
-}
+    });
 
-@end
+SPEC_END

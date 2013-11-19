@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04BDC69BB6394B7DBA63D0EC /* libPods-ScrollAnimTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 993DABF6BA42443AA46EB648 /* libPods-ScrollAnimTests.a */; };
+		21EB496993A8446D9D958923 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B8448088F343F09278BC58 /* libPods.a */; };
 		9C56C1731834B80600A8CD95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C56C1721834B80600A8CD95 /* Foundation.framework */; };
 		9C56C1751834B80600A8CD95 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C56C1741834B80600A8CD95 /* CoreGraphics.framework */; };
 		9C56C1771834B80600A8CD95 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C56C1761834B80600A8CD95 /* UIKit.framework */; };
@@ -21,6 +23,9 @@
 		9C56C1941834B80600A8CD95 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C56C1761834B80600A8CD95 /* UIKit.framework */; };
 		9C56C19C1834B80600A8CD95 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C56C19A1834B80600A8CD95 /* InfoPlist.strings */; };
 		9C56C19E1834B80600A8CD95 /* ScrollAnimTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C56C19D1834B80600A8CD95 /* ScrollAnimTests.m */; };
+		9C56C1AB183B491F00A8CD95 /* sun_07.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C56C1AA183B491F00A8CD95 /* sun_07.png */; };
+		BE48EC5B3D5019BD20D5B5ED /* ScrollAnimEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = BE48EF983EBC78C8F36AF105 /* ScrollAnimEntry.m */; };
+		BE48EF9068A4AD630159FA32 /* ScrollAnim.m in Sources */ = {isa = PBXBuildFile; fileRef = BE48E0A48D826B0CD9D4059B /* ScrollAnim.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D39FB61143E439FA35BF929 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		93B8448088F343F09278BC58 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		993DABF6BA42443AA46EB648 /* libPods-ScrollAnimTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ScrollAnimTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C56C16F1834B80600A8CD95 /* ScrollAnim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollAnim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C56C1721834B80600A8CD95 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9C56C1741834B80600A8CD95 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +61,12 @@
 		9C56C1991834B80600A8CD95 /* ScrollAnimTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ScrollAnimTests-Info.plist"; sourceTree = "<group>"; };
 		9C56C19B1834B80600A8CD95 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9C56C19D1834B80600A8CD95 /* ScrollAnimTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollAnimTests.m; sourceTree = "<group>"; };
+		9C56C1AA183B491F00A8CD95 /* sun_07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sun_07.png; sourceTree = "<group>"; };
+		BC144864ACBF40CFB363EDB1 /* Pods-ScrollAnimTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollAnimTests.xcconfig"; path = "Pods/Pods-ScrollAnimTests.xcconfig"; sourceTree = "<group>"; };
+		BE48E0A48D826B0CD9D4059B /* ScrollAnim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollAnim.m; sourceTree = "<group>"; };
+		BE48E426C99EF13E1ED70603 /* ScrollAnimEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollAnimEntry.h; sourceTree = "<group>"; };
+		BE48EDAE4A799ADE5D64DB3F /* ScrollAnim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollAnim.h; sourceTree = "<group>"; };
+		BE48EF983EBC78C8F36AF105 /* ScrollAnimEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollAnimEntry.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +77,7 @@
 				9C56C1751834B80600A8CD95 /* CoreGraphics.framework in Frameworks */,
 				9C56C1771834B80600A8CD95 /* UIKit.framework in Frameworks */,
 				9C56C1731834B80600A8CD95 /* Foundation.framework in Frameworks */,
+				21EB496993A8446D9D958923 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +88,7 @@
 				9C56C1921834B80600A8CD95 /* XCTest.framework in Frameworks */,
 				9C56C1941834B80600A8CD95 /* UIKit.framework in Frameworks */,
 				9C56C1931834B80600A8CD95 /* Foundation.framework in Frameworks */,
+				04BDC69BB6394B7DBA63D0EC /* libPods-ScrollAnimTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,10 +98,13 @@
 		9C56C1661834B80600A8CD95 = {
 			isa = PBXGroup;
 			children = (
+				9C56C1AA183B491F00A8CD95 /* sun_07.png */,
 				9C56C1781834B80600A8CD95 /* ScrollAnim */,
 				9C56C1971834B80600A8CD95 /* ScrollAnimTests */,
 				9C56C1711834B80600A8CD95 /* Frameworks */,
 				9C56C1701834B80600A8CD95 /* Products */,
+				6D39FB61143E439FA35BF929 /* Pods.xcconfig */,
+				BC144864ACBF40CFB363EDB1 /* Pods-ScrollAnimTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +124,8 @@
 				9C56C1741834B80600A8CD95 /* CoreGraphics.framework */,
 				9C56C1761834B80600A8CD95 /* UIKit.framework */,
 				9C56C1911834B80600A8CD95 /* XCTest.framework */,
+				93B8448088F343F09278BC58 /* libPods.a */,
+				993DABF6BA42443AA46EB648 /* libPods-ScrollAnimTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -119,6 +140,10 @@
 				9C56C1881834B80600A8CD95 /* ViewController.m */,
 				9C56C18A1834B80600A8CD95 /* Images.xcassets */,
 				9C56C1791834B80600A8CD95 /* Supporting Files */,
+				BE48E0A48D826B0CD9D4059B /* ScrollAnim.m */,
+				BE48EDAE4A799ADE5D64DB3F /* ScrollAnim.h */,
+				BE48EF983EBC78C8F36AF105 /* ScrollAnimEntry.m */,
+				BE48E426C99EF13E1ED70603 /* ScrollAnimEntry.h */,
 			);
 			path = ScrollAnim;
 			sourceTree = "<group>";
@@ -159,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C56C1A11834B80600A8CD95 /* Build configuration list for PBXNativeTarget "ScrollAnim" */;
 			buildPhases = (
+				526719BC0B464EEC8D18F14B /* Check Pods Manifest.lock */,
 				9C56C16B1834B80600A8CD95 /* Sources */,
 				9C56C16C1834B80600A8CD95 /* Frameworks */,
 				9C56C16D1834B80600A8CD95 /* Resources */,
+				0AA6E080D5E644619F32C401 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,9 +203,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C56C1A41834B80600A8CD95 /* Build configuration list for PBXNativeTarget "ScrollAnimTests" */;
 			buildPhases = (
+				10E10CAE15FE48708E14E6D3 /* Check Pods Manifest.lock */,
 				9C56C18C1834B80600A8CD95 /* Sources */,
 				9C56C18D1834B80600A8CD95 /* Frameworks */,
 				9C56C18E1834B80600A8CD95 /* Resources */,
+				A9E0B0AF6B0F4B7C9A596E35 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -200,7 +229,7 @@
 				ORGANIZATIONNAME = "Li Shuo";
 				TargetAttributes = {
 					9C56C18F1834B80600A8CD95 = {
-						TestTargetID = 9C56C16E1834B80600A8CD95;
+						TestTargetID = 9C56C16E1834B80600A8CD95 /* ScrollAnim */;
 					};
 				};
 			};
@@ -215,6 +244,8 @@
 			mainGroup = 9C56C1661834B80600A8CD95;
 			productRefGroup = 9C56C1701834B80600A8CD95 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+			);
 			projectRoot = "";
 			targets = (
 				9C56C16E1834B80600A8CD95 /* ScrollAnim */,
@@ -229,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C56C18B1834B80600A8CD95 /* Images.xcassets in Resources */,
+				9C56C1AB183B491F00A8CD95 /* sun_07.png in Resources */,
 				9C56C17D1834B80600A8CD95 /* InfoPlist.strings in Resources */,
 				9C56C1861834B80600A8CD95 /* Main.storyboard in Resources */,
 			);
@@ -244,6 +276,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0AA6E080D5E644619F32C401 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		10E10CAE15FE48708E14E6D3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		526719BC0B464EEC8D18F14B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A9E0B0AF6B0F4B7C9A596E35 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-ScrollAnimTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9C56C16B1834B80600A8CD95 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -252,6 +347,8 @@
 				9C56C1891834B80600A8CD95 /* ViewController.m in Sources */,
 				9C56C1831834B80600A8CD95 /* AppDelegate.m in Sources */,
 				9C56C17F1834B80600A8CD95 /* main.m in Sources */,
+				BE48EF9068A4AD630159FA32 /* ScrollAnim.m in Sources */,
+				BE48EC5B3D5019BD20D5B5ED /* ScrollAnimEntry.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +474,7 @@
 		};
 		9C56C1A21834B80600A8CD95 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D39FB61143E439FA35BF929 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -384,12 +482,14 @@
 				GCC_PREFIX_HEADER = "ScrollAnim/ScrollAnim-Prefix.pch";
 				INFOPLIST_FILE = "ScrollAnim/ScrollAnim-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		9C56C1A31834B80600A8CD95 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D39FB61143E439FA35BF929 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -397,12 +497,14 @@
 				GCC_PREFIX_HEADER = "ScrollAnim/ScrollAnim-Prefix.pch";
 				INFOPLIST_FILE = "ScrollAnim/ScrollAnim-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
 		9C56C1A51834B80600A8CD95 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC144864ACBF40CFB363EDB1 /* Pods-ScrollAnimTests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ScrollAnim.app/ScrollAnim";
@@ -426,6 +528,7 @@
 		};
 		9C56C1A61834B80600A8CD95 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC144864ACBF40CFB363EDB1 /* Pods-ScrollAnimTests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ScrollAnim.app/ScrollAnim";
@@ -462,6 +565,7 @@
 				9C56C1A31834B80600A8CD95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9C56C1A41834B80600A8CD95 /* Build configuration list for PBXNativeTarget "ScrollAnimTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +574,7 @@
 				9C56C1A61834B80600A8CD95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
